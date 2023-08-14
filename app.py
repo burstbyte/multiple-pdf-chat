@@ -14,7 +14,16 @@ from langchain.chains.question_answering import load_qa_chain
 from langchain.llms import OpenAI
 from langchain.callbacks import get_openai_callback
 
+import openai
 
+# Update this line with your new API key
+# new_api_key = "your_new_api_key_here"
+
+# Set the new API key
+# openai.api_key = new_api_key
+
+# Print the API key for verification
+print("Using API key:", openai.api_key)
 
 def get_pdf_text(pdf_docs):
     text = ""
